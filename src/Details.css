@@ -1,0 +1,87 @@
+.main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 150vh;
+    background-color: rgb(214, 212, 212);
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.holderName{
+ margin-bottom: 20px;
+}
+
+.cardNumber{
+    margin-bottom: 20px;
+}
+
+.otherInfo{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.date{
+    margin-right: 20px;
+}
+
+.month{
+    margin-right: 10px;
+    background-color: transparent;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.year{
+    background-color: transparent;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.inputCVV{
+    background-color: transparent;
+    width: 130px;
+    height: 40px;
+    border: solid 2px rgb(178, 176, 176);
+    border-radius: 5px;
+}
+
+.holderInput{
+background-color: transparent;
+width: 300px;
+height: 40px;
+border: solid 2px rgb(178, 176, 176);
+border-radius: 5px;
+}
+
+.numberInput{
+    background-color: transparent;
+    width: 300px;
+    height: 40px;
+    border: solid 2px rgb(178, 176, 176);
+    border-radius: 5px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+label{
+    font-weight: 500;
+}
+
+button{
+    width: 310px;
+    height: 40px;   
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.errorMessage{
+    position: absolute;
+    color: red;      
+}
