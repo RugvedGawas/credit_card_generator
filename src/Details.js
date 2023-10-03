@@ -1,6 +1,9 @@
 import React, {useState}from 'react'
 import './Details.css';
 import Card from './Card';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Details() {
 
@@ -59,13 +62,7 @@ function handleSubmit(e) {
      setErrorText(true)
      return
   }
-  // if(expMonth===0){
-  //   setErrorText(true)
-  //   return
-  // }if(expYear===0){
-  //   setErrorText(true)
-  //   return
-  // }
+
   else{
     let {name, value} = e.target;
     setSubmittedValues({ 
@@ -80,7 +77,15 @@ function handleSubmit(e) {
       expiryYear:'',
       cvvNumber: '',
     });
-
+    toast.success('Details Submitted Successfully !!', {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
 
  
     setErrorText(false)
@@ -193,7 +198,7 @@ if(hName&&cNumber&&cvvConsole){
      
     </div>
    
-    
+    <ToastContainer />
     </>
   )
 }
