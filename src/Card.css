@@ -1,0 +1,101 @@
+.creditCard{
+    background: linear-gradient( to top left, rgb(15, 3, 3) 40%, rgb(52, 6, 6) 50%, rgb(102, 8, 8) 70%,rgb(68, 12, 12) 80%, rgb(15, 3, 3) 100%);
+    height: 100vh;
+    width: 70vh;
+}
+
+.frontside{
+    width: 450px;
+    height: 250px;  
+    color: #ffff;
+    transform: translate(30vh,10vh);
+    border-radius: 10px;
+    background: linear-gradient( to top left,rgb(10, 39, 171), rgb(20, 49, 179) 40%,  rgb(49, 76, 215) 50%, rgb(210, 41, 193) 70%,rgb(179, 18, 179) 80%, rgb(167, 9, 146) 100%);
+}
+
+.backside{
+    width: 450px;
+    height: 250px;
+    background-color: rgb(214, 212, 212);
+    box-shadow: inset 0px 0px 70px 80px rgb(181, 179, 179) ;
+    transform: translate(40vh,20vh);
+    border-radius: 10px;
+}
+
+.big{
+    height: 40px;
+    width: 40px;
+    background-color: gainsboro;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.small{
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid white 0.5px;
+    margin-top: 20px;
+}
+
+.circles{
+    display: flex;
+    
+}
+
+.userNumber{
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+    margin-top: 70px;
+}
+
+.dateOfExpiry{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.strip{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 30px;
+    background-color: #000;
+}
+
+
+.showCVV{
+    position: absolute;
+    margin-left: 70px;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    top: 100px;
+    background-color: rgb(149, 148, 148) ;
+    color: #fff;
+}
+
+.cvvShowed{
+    text-align: right;
+    margin: 10px;
+}
+
+.textLine1{
+    position: absolute;
+    top: 100px;
+    margin-left: 25%;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(149, 148, 148);
+}
+
+.textLine2{
+    position: absolute;
+    top: 120px;
+    margin-left: 25%;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(149, 148, 148);
+}
