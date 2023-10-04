@@ -122,6 +122,7 @@ if(hName&&cNumber&&cvvConsole){
            name='holderName'
            value={values.holderName}
            onChange={changeHandler}
+           maxLength={30}
             />
    {errorText&&values.holderName.length<=0? <span className='errorMessage'>'This field is required with valid details'</span>:""}
         </div>
